@@ -26,7 +26,14 @@
   width: inherit;
 }
 #headerComponentDiv #logoAndNameDiv p {
-  font-size: 1.2em;
+  font-size: 1.5em;
+}
+#headerComponentDiv input {
+  color: white;
+  padding: 0.5em;
+}
+#headerComponentDiv input + fieldset {
+  border-color: white;
 }
 #headerComponentDiv #SignInAndMenuComponentDiv {
   align-items: center;
@@ -36,7 +43,6 @@
 }
 #headerComponentDiv #SignInAndMenuComponentDiv #hamburgerContainer img {
   width: inherit;
-  font-size: 1.5em;
 }
 
 #adImageDiv {
@@ -61,7 +67,7 @@
 }
 #adImageDiv #overlappingTextDiv {
   position: absolute;
-  padding-left: 2em;
+  padding-left: 4.5em;
   color: white;
   width: 20%;
   display: flex;

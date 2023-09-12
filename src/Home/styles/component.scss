@@ -31,8 +31,14 @@ $overlappingTextDivWidth:20%;
             font-size: 1.5em;
         }
     }
-}
+    input{
+        color: white;
+        padding: 0.5em;
 
+    }
+    input + fieldset{
+        border-color: white;
+    }
     #SignInAndMenuComponentDiv{
         align-items: center;
         #hamburgerContainer{
@@ -42,6 +48,8 @@ $overlappingTextDivWidth:20%;
             }
         }
     }
+}
+
 
 #adImageDiv{
     position: absolute;

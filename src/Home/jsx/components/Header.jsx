@@ -22,7 +22,7 @@ function LogoAndNameComponent(){
 }
 
 function SearchComponent(){
-    return <TextField variant="outlined" placeholder="What do you want to watch?" type="search"  sx={{width:"30%"}} />
+    return <TextField variant="outlined" placeholder="What do you want to watch?" type="text"  sx={{width:"30%"}} id="searchComponent" />
 }
 
 function SignInAndMenuComponent(){
