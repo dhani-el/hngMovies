@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#headerComponentDiv {
+  display: flex;
+  padding: 1em 2em;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+#headerComponentDiv #logoAndNameDiv, #headerComponentDiv #SignInAndMenuComponentDiv {
+  display: flex;
+  gap: 0.5em;
+}
+#headerComponentDiv #logoAndNameDiv {
+  align-items: center;
+}
+#headerComponentDiv #logoAndNameDiv p {
+  font-size: 1.2em;
+}/*# sourceMappingURL=component.css.map */
