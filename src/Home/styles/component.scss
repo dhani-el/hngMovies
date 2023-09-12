@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$padding-normal:2em;
+$padding-small:1em;
+
+#headerComponentDiv{
+    display: flex;
+    padding:$padding-small $padding-normal;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    #logoAndNameDiv, #SignInAndMenuComponentDiv{
+        display: flex;
+        gap: 0.5em;
+    }
+    #logoAndNameDiv{
+        align-items: center;
+        p{
+            font-size: 1.2em;
+        }
+    }
+
+}

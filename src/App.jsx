@@ -1,7 +1,12 @@
-import { useState } from 'react'
+import { useState } from 'react';
+import Home from './Home/jsx';
+
+
 
 function App() {
-  return <div>MovieBox WebApp</div>
+  return <div>
+              <Home/>
+          </div>
 }
 
 export default App
