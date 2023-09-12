@@ -6,6 +6,7 @@
 
 $padding-normal:4.5em;
 $padding-small:1em;
+$overlappingTextDivWidth:20%;
 
 #headerComponentDiv{
     display: flex;
@@ -13,6 +14,7 @@ $padding-small:1em;
     width: 100%;
     align-items: center;
     justify-content: space-between;
+    color: white;
     #logoAndNameDiv, #SignInAndMenuComponentDiv{
         display: flex;
         gap: 1em;
@@ -26,9 +28,10 @@ $padding-small:1em;
             }
         }
         p{
-            font-size: 1.2em;
+            font-size: 1.5em;
         }
     }
+}
 
     #SignInAndMenuComponentDiv{
         align-items: center;
@@ -40,4 +43,49 @@ $padding-small:1em;
         }
     }
 
+#adImageDiv{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 85vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    img{
+        width: 100%;
+        height: auto ;
+    }
+    #imageBlur{
+        width: 100vw;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.612);
+        position: absolute;
+    }
+    #overlappingTextDiv{
+        position: absolute;
+        padding-left: $padding-normal;
+        color: white;
+        width: $overlappingTextDivWidth;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+    }
+    h2{
+        line-height: 1.3em;
+    }
+    #ratingsDiv{
+        display: flex;
+        gap: 1em;
+        span{
+            display: flex;
+            gap:0.1em;
+        }
+    }
+    button{
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
 }
