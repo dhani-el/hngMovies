@@ -13,6 +13,7 @@ $padding-small:1em;
     width: 100%;
     align-items: center;
     justify-content: space-between;
+    color: white;
     #logoAndNameDiv, #SignInAndMenuComponentDiv{
         display: flex;
         gap: 0.5em;
@@ -20,8 +21,20 @@ $padding-small:1em;
     #logoAndNameDiv{
         align-items: center;
         p{
-            font-size: 1.2em;
+            font-size: 1.5em;
         }
     }
+}
 
+#adImageDiv{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 85vh;
+    overflow: hidden;
+    img{
+        width: 100%;
+        height: auto ;
+    }
 }

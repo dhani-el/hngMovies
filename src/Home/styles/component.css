@@ -10,6 +10,7 @@
   width: 100%;
   align-items: center;
   justify-content: space-between;
+  color: white;
 }
 #headerComponentDiv #logoAndNameDiv, #headerComponentDiv #SignInAndMenuComponentDiv {
   display: flex;
@@ -19,5 +20,18 @@
   align-items: center;
 }
 #headerComponentDiv #logoAndNameDiv p {
-  font-size: 1.2em;
+  font-size: 1.5em;
+}
+
+#adImageDiv {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 85vh;
+  overflow: hidden;
+}
+#adImageDiv img {
+  width: 100%;
+  height: auto;
 }/*# sourceMappingURL=component.css.map */
