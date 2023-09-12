@@ -54,6 +54,13 @@ $overlappingTextDivWidth:20%;
         display: flex;
         flex-direction: column;
         gap: 0.5em;
+        button{
+            a{
+                display: flex;
+                align-items: center;
+                gap: 0.5em;
+            }
+        }
     }
     h2{
         line-height: 1.3em;

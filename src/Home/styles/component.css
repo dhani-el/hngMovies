@@ -52,6 +52,11 @@
   flex-direction: column;
   gap: 0.5em;
 }
+#adImageDiv #overlappingTextDiv button a {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
 #adImageDiv h2 {
   line-height: 1.3em;
 }

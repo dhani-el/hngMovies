@@ -1,5 +1,6 @@
 import { Button } from "@mui/material";
 import TestImage from "../../../assets/image/testimage.jpg";
+import {PlayCircle} from "@mui/icons-material"
 
 
 export default function AdImage(){
@@ -32,6 +33,6 @@ function OverlappingTextComponent({details}){
             <p>{details.description}</p>
         </div>
 
-        <Button variant="contained" ><a href={details.trailerLink} > WATCH TRAILER</a></Button>
+        <Button variant="contained" ><a href={details.trailerLink} > <PlayCircle/> WATCH TRAILER</a></Button>
     </div>
 }
