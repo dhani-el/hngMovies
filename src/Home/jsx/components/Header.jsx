@@ -1,4 +1,6 @@
 import {TextField} from "@mui/material";
+import { Search} from "@mui/icons-material";
+import InputAdornment from "@mui/material/InputAdornment";
 import "../../styles/component.css";
 import logoSvg from "../../../assets/image/tv.png"
 import menuSvg from "../../../assets/image/menu.png"
@@ -22,7 +24,7 @@ function LogoAndNameComponent(){
 }
 
 function SearchComponent(){
-    return <TextField variant="outlined" placeholder="What do you want to watch?" type="search"  sx={{width:"30%"}} />
+    return <TextField variant="outlined" placeholder="What do you want to watch?" type="text" InputProps={{endAdornment:<InputAdornment position="end" ><Search/></InputAdornment>}}  sx={{width:"30%"}} id="searchComponent" />
 }
 
 function SignInAndMenuComponent(){
