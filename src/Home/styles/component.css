@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#headerComponentDiv {
+  display: flex;
+  padding: 1em 4.5em;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+#headerComponentDiv #logoAndNameDiv, #headerComponentDiv #SignInAndMenuComponentDiv {
+  display: flex;
+  gap: 1em;
+}
+#headerComponentDiv #logoAndNameDiv {
+  align-items: center;
+}
+#headerComponentDiv #logoAndNameDiv #tvContainer {
+  width: 2.2em;
+}
+#headerComponentDiv #logoAndNameDiv #tvContainer img {
+  width: inherit;
+}
+#headerComponentDiv #logoAndNameDiv p {
+  font-size: 1.2em;
+}
+#headerComponentDiv #SignInAndMenuComponentDiv {
+  align-items: center;
+}
+#headerComponentDiv #SignInAndMenuComponentDiv #hamburgerContainer {
+  width: 2.2em;
+}
+#headerComponentDiv #SignInAndMenuComponentDiv #hamburgerContainer img {
+  width: inherit;
+  font-size: 1.5em;
+}
+
+#adImageDiv {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 85vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+#adImageDiv img {
+  width: 100%;
+  height: auto;
+}
+#adImageDiv #imageBlur {
+  width: 100vw;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.612);
+  position: absolute;
+}
+#adImageDiv #overlappingTextDiv {
+  position: absolute;
+  padding-left: 2em;
+  color: white;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+#adImageDiv h2 {
+  line-height: 1.3em;
+}
+#adImageDiv #ratingsDiv {
+  display: flex;
+  gap: 1em;
+}
+#adImageDiv #ratingsDiv span {
+  display: flex;
+  gap: 0.1em;
+}
+#adImageDiv button a {
+  text-decoration: none;
+  color: white;
+}/*# sourceMappingURL=component.css.map */
