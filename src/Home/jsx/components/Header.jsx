@@ -1,6 +1,7 @@
 import {TextField} from "@mui/material";
 import "../../styles/component.css";
-import logoImage from "../../../assets/image/tv.png"
+import logoSvg from "../../../assets/image/tv.png"
+import menuSvg from "../../../assets/image/menu.png"
 
 export default function HeaderComponent(){
     return <div id="headerComponentDiv">
@@ -13,8 +14,8 @@ export default function HeaderComponent(){
 
 function LogoAndNameComponent(){
     return <div id="logoAndNameDiv">
-                <span>
-                    <img src={logoImage} alt="MovieBox logo" />
+                <span id="tvContainer">
+                    <img src={logoSvg} alt="MovieBox logo" />
                 </span>
                 <p>MovieBox</p>
             </div>
@@ -36,5 +37,5 @@ function SignInComponent(){
 }
 
 function MenuHamburgerComponent(){
-    return <div>menu</div>
+    return <div id="hamburgerContainer"><img src={menuSvg} /></div>
 }
