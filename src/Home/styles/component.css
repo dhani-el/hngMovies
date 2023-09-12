@@ -6,18 +6,33 @@
 
 #headerComponentDiv {
   display: flex;
-  padding: 1em 2em;
+  padding: 1em 4.5em;
   width: 100%;
   align-items: center;
   justify-content: space-between;
 }
 #headerComponentDiv #logoAndNameDiv, #headerComponentDiv #SignInAndMenuComponentDiv {
   display: flex;
-  gap: 0.5em;
+  gap: 1em;
 }
 #headerComponentDiv #logoAndNameDiv {
   align-items: center;
 }
+#headerComponentDiv #logoAndNameDiv #tvContainer {
+  width: 2.2em;
+}
+#headerComponentDiv #logoAndNameDiv #tvContainer img {
+  width: inherit;
+}
 #headerComponentDiv #logoAndNameDiv p {
   font-size: 1.2em;
+}
+#headerComponentDiv #SignInAndMenuComponentDiv {
+  align-items: center;
+}
+#headerComponentDiv #SignInAndMenuComponentDiv #hamburgerContainer {
+  width: 2.2em;
+}
+#headerComponentDiv #SignInAndMenuComponentDiv #hamburgerContainer img {
+  width: inherit;
 }/*# sourceMappingURL=component.css.map */

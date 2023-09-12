@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-$padding-normal:2em;
+$padding-normal:4.5em;
 $padding-small:1em;
 
 #headerComponentDiv{
@@ -15,12 +15,28 @@ $padding-small:1em;
     justify-content: space-between;
     #logoAndNameDiv, #SignInAndMenuComponentDiv{
         display: flex;
-        gap: 0.5em;
+        gap: 1em;
     }
     #logoAndNameDiv{
         align-items: center;
+        #tvContainer{
+            width: 2.2em;
+            img{
+                width: inherit;
+            }
+        }
         p{
             font-size: 1.2em;
+        }
+    }
+
+    #SignInAndMenuComponentDiv{
+        align-items: center;
+        #hamburgerContainer{
+            width: 2.2em;
+            img{
+                width: inherit;
+            }
         }
     }
 
