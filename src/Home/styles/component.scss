@@ -36,7 +36,11 @@ $overlappingTextDivWidth:20%;
         padding: 0.5em;
 
     }
-    input + fieldset{
+    input + div + fieldset{
+        border-color: white;
+    }
+    input ~ div{
+        color: white;
         border-color: white;
     }
     #SignInAndMenuComponentDiv{

@@ -32,7 +32,11 @@
   color: white;
   padding: 0.5em;
 }
-#headerComponentDiv input + fieldset {
+#headerComponentDiv input + div + fieldset {
+  border-color: white;
+}
+#headerComponentDiv input ~ div {
+  color: white;
   border-color: white;
 }
 #headerComponentDiv #SignInAndMenuComponentDiv {
