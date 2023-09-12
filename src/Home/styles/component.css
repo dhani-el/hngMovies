@@ -30,8 +30,40 @@
   width: 100vw;
   height: 85vh;
   overflow: hidden;
+  display: flex;
+  align-items: center;
 }
 #adImageDiv img {
   width: 100%;
   height: auto;
+}
+#adImageDiv #imageBlur {
+  width: 100vw;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.612);
+  position: absolute;
+}
+#adImageDiv #overlappingTextDiv {
+  position: absolute;
+  padding-left: 2em;
+  color: white;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+#adImageDiv h2 {
+  line-height: 1.3em;
+}
+#adImageDiv #ratingsDiv {
+  display: flex;
+  gap: 1em;
+}
+#adImageDiv #ratingsDiv span {
+  display: flex;
+  gap: 0.1em;
+}
+#adImageDiv button a {
+  text-decoration: none;
+  color: white;
 }/*# sourceMappingURL=component.css.map */
