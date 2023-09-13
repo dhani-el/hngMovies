@@ -7,6 +7,8 @@
 $padding-normal:4.5em;
 $padding-small:1em;
 $overlappingTextDivWidth:20%;
+$accent-color: rgb(255, 31, 68);
+$primary-font:"";
 
 #headerComponentDiv{
     display: flex;
@@ -71,6 +73,44 @@ $overlappingTextDivWidth:20%;
         flex-direction: column;
         gap: 0.5em;
     }
+    #paginationDivComponent::-webkit-scrollbar{
+        width: 0px;
+    }
+    #paginationDivComponent::-moz-scrollbar{
+        width: 0px;
+    }
+    #paginationDivComponent::-ms-scrollbar{
+        width: 0px;
+    }
+    #paginationDivComponent{
+        position: absolute;
+        right: 3vw;
+        color: white;
+        display: flex;
+        height: 5em;
+        overflow-y: scroll;
+        width: 2em;
+        justify-content: end;
+        scrollbar-width: 0px;
+        #singularContainer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 1em;
+            p{
+                display: block;
+                height: 1em;
+            }
+        }
+        #dash{
+            background-color: white;
+            width: 1em;
+            height: 0.4em;
+            position: sticky;
+            left: 0;
+            top: 50%;
+        }
+    }
     h2{
         line-height: 1.3em;
     }
@@ -83,6 +123,7 @@ $overlappingTextDivWidth:20%;
         }
     }
     button{
+        background-color: $accent-color;
         a{
             text-decoration: none;
             color: white;
