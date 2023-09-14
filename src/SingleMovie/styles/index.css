@@ -1,0 +1,18 @@
+#singelMovieDiv {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  gap: 5%;
+}
+#singelMovieDiv #leftSection {
+  width: 20%;
+  height: 100%;
+  border: 0.1em grey solid;
+  border-top-right-radius: 2em;
+  border-bottom-right-radius: 2em;
+}
+#singelMovieDiv #mainSection {
+  width: 70%;
+  height: 100%;
+  border: 0.1em grey solid;
+}/*# sourceMappingURL=index.css.map */
