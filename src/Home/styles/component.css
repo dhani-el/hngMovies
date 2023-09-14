@@ -8,6 +8,7 @@
   display: flex;
   padding: 1em 4.5em;
   width: 100%;
+  max-height: 10vh;
   align-items: center;
   justify-content: space-between;
   color: white;
@@ -26,22 +27,22 @@
   width: inherit;
 }
 #headerComponentDiv #logoAndNameDiv p {
-  font-size: 1.2em;
-}
-#headerComponentDiv #SignInAndMenuComponentDiv {
-  align-items: center;
-}
-#headerComponentDiv #SignInAndMenuComponentDiv #hamburgerContainer {
-  width: 2.2em;
-}
-#headerComponentDiv #SignInAndMenuComponentDiv #hamburgerContainer img {
-  width: inherit;
   font-size: 1.5em;
 }
 
+#SignInAndMenuComponentDiv {
+  align-items: center;
+}
+#SignInAndMenuComponentDiv #hamburgerContainer {
+  width: 2.2em;
+}
+#SignInAndMenuComponentDiv #hamburgerContainer img {
+  width: inherit;
+}
+
 #adImageDiv {
-  position: absolute;
-  top: 0;
+  position: relative;
+  top: -10vh;
   z-index: -1;
   width: 100vw;
   height: 85vh;
@@ -61,7 +62,7 @@
 }
 #adImageDiv #overlappingTextDiv {
   position: absolute;
-  padding-left: 2em;
+  padding-left: 4.5em;
   color: white;
   width: 20%;
   display: flex;
@@ -82,4 +83,78 @@
 #adImageDiv button a {
   text-decoration: none;
   color: white;
+}
+
+#featuredMoviesDiv {
+  padding: 0 4.5em;
+}
+#featuredMoviesDiv #featuredMoviesHeader {
+  display: flex;
+  justify-content: space-between;
+}
+#featuredMoviesDiv #featuredMoviesHeader span {
+  display: flex;
+}
+#featuredMoviesDiv #moviesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+}
+#featuredMoviesDiv #moviesGrid #singleMovie {
+  width: 100%;
+  display: flex;
+  margin-bottom: 1.5em;
+  flex-direction: column;
+}
+#featuredMoviesDiv #moviesGrid #singleMovie #imageContainerDiv {
+  width: 90%;
+  height: auto;
+  position: relative;
+}
+#featuredMoviesDiv #moviesGrid #singleMovie #imageContainerDiv img {
+  width: 100%;
+  height: 100%;
+}
+#featuredMoviesDiv #moviesGrid #singleMovie #imageContainerDiv #favouriteSpan {
+  width: 1.2em;
+  height: 1.2em;
+}
+#featuredMoviesDiv #moviesGrid #singleMovie #imageContainerDiv #favouriteSpan img {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  right: 4%;
+  top: 4%;
+}
+#featuredMoviesDiv #moviesGrid #singleMovie #imageContainerDiv #tvSeriesSpan {
+  display: flex;
+  height: 1.5em;
+  width: 3.2em;
+  background-color: rgba(146, 146, 146, 0.488);
+  border-radius: 0.5em;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 4%;
+  left: 4%;
+}
+#featuredMoviesDiv #moviesGrid #singleMovie #imageContainerDiv #tvSeriesSpan p {
+  font-size: 0.6em;
+}
+#featuredMoviesDiv #moviesGrid #singleMovie #metaDataDiv {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+#featuredMoviesDiv #moviesGrid #singleMovie #metaDataDiv #countryAndYear, #featuredMoviesDiv #moviesGrid #singleMovie #metaDataDiv #genre {
+  color: grey;
+}
+#featuredMoviesDiv #moviesGrid #singleMovie #metaDataDiv #title {
+  font-weight: 900;
+}
+#featuredMoviesDiv #moviesGrid #singleMovie #metaDataDiv #ratings {
+  display: flex;
+  justify-content: space-between;
+}
+#featuredMoviesDiv #moviesGrid #singleMovie #metaDataDiv #ratings #imdb, #featuredMoviesDiv #moviesGrid #singleMovie #metaDataDiv #ratings #rotten {
+  display: flex;
 }/*# sourceMappingURL=component.css.map */

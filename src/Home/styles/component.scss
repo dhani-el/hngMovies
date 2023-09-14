@@ -12,6 +12,7 @@ $overlappingTextDivWidth:20%;
     display: flex;
     padding:$padding-small $padding-normal;
     width: 100%;
+    max-height: 10vh;
     align-items: center;
     justify-content: space-between;
     color: white;
@@ -33,7 +34,7 @@ $overlappingTextDivWidth:20%;
     }
 }
 
-    #SignInAndMenuComponentDiv{
+#SignInAndMenuComponentDiv{
         align-items: center;
         #hamburgerContainer{
             width: 2.2em;
@@ -44,8 +45,8 @@ $overlappingTextDivWidth:20%;
     }
 
 #adImageDiv{
-    position: absolute;
-    top: 0;
+    position: relative;
+    top: -10vh;
     z-index: -1;
     width: 100vw;
     height: 85vh;
@@ -86,6 +87,82 @@ $overlappingTextDivWidth:20%;
         a{
             text-decoration: none;
             color: white;
+        }
+    }
+}
+
+#featuredMoviesDiv{
+    padding:0 $padding-normal;
+    #featuredMoviesHeader{
+        display: flex;
+        justify-content: space-between;
+        span{
+            display: flex;
+        }
+    }
+    #moviesGrid{
+        display: grid;
+        grid-template-columns: repeat(4,25%);
+        #singleMovie{
+            width: 100%;
+            display: flex;
+            margin-bottom: 1.5em;
+            flex-direction: column;
+            #imageContainerDiv{
+                width: 90%;
+                height: auto;
+                position: relative;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+                #favouriteSpan{
+                    width: 1.2em;
+                    height: 1.2em;
+                    img{
+                        width: inherit;
+                        height: inherit;
+                        position: absolute;
+                        right: 4%;
+                        top: 4%;
+                    }
+                }
+                #tvSeriesSpan{
+                    display: flex;
+                    height: 1.5em;
+                    width: 3.2em;
+                    background-color: rgba(146, 146, 146, 0.488);
+                    border-radius: 0.5em;
+                    align-items: center;
+                    justify-content: center;
+                    position: absolute;
+                    top: 4%;
+                    left: 4%;
+                    p{
+                        font-size: 0.6em;
+    
+                    }
+                }
+            }
+            #metaDataDiv{
+                display: flex;
+                flex-direction: column;
+                width: 90%;
+                #countryAndYear,#genre{
+                    color: grey;
+                }
+                #title{
+                    font-weight: 900;
+                }
+                #ratings{
+                    display: flex;
+                    justify-content: space-between;
+                    #imdb,#rotten{
+                        display: flex;
+                    }
+                }
+            }
+
         }
     }
 }
