@@ -1,4 +1,5 @@
 import { Button } from "@mui/material";
+import PaginationComponent from "./pagination";
 import TestImage from "../../../assets/image/testimage.jpg";
 
 
@@ -13,9 +14,10 @@ export default function AdImage(){
         trailerLink:"https://www.google.com",
     }
     return <div id="adImageDiv" >
-                <OverlappingTextComponent details={dummyData} />
                 <div id="imageBlur"></div>
                 <img src={TestImage} />
+                <OverlappingTextComponent details={dummyData} />
+                <PaginationComponent/>
             </div>
 }
 
