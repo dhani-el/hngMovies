@@ -1,5 +1,7 @@
 import HeaderComponent from "./components/Header";
 import AdImage from "./components/backgroundImage";
+import Footer from "./components/footer";
+
 import FeaturedMoviesSection from "./components/featuredMovies";
 import imageOne from "../../assets/two.jpg";
 import imageTwo from "../../assets/three.jpg";
@@ -55,6 +57,7 @@ export default function Home(){
     return <div id="homeComponentDiv">
                 <HeaderComponent/>
                 <AdImage/>
+                <Footer/>
                 <FeaturedMoviesSection movieData={dummyMovieMetaData} />
             </div>
 }

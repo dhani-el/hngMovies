@@ -29,6 +29,7 @@
 #headerComponentDiv #logoAndNameDiv p {
   font-size: 1.5em;
 
+
 }
 #headerComponentDiv input {
   color: white;
@@ -138,6 +139,33 @@
   color: white;
 }
 
+#footerDiv {
+  width: 100vw;
+  margin-top: 5em;
+}
+#footerDiv #socialIconsDiv, #footerDiv #legalDiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+#footerDiv #legalDiv {
+  margin-top: 2em;
+  font-weight: 900;
+}
+#footerDiv #copyrightDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 2em;
+  padding-bottom: 4em;
+}
+#footerDiv #copyrightDiv p, #footerDiv #copyrightDiv svg {
+  color: grey;
+}
+#footerDiv #copyrightDiv svg {
+  font-size: 1em;
 #featuredMoviesDiv {
   padding: 0 4.5em;
 }

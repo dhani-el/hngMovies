@@ -34,6 +34,7 @@ $primary-font:"";
             font-size: 1.5em;
         }
     }
+
     input{
         color: white;
         padding: 0.5em;
@@ -49,6 +50,7 @@ $primary-font:"";
         color: white;
         border-color: white;
     }
+
     #SignInAndMenuComponentDiv{
 
         align-items: center;
@@ -60,7 +62,6 @@ $primary-font:"";
         }
     }
 }
-
 
 #adImageDiv{
     position: relative;
@@ -148,6 +149,32 @@ $primary-font:"";
     }
 }
 
+#footerDiv{
+    width: 100vw;
+    margin-top: 5em;
+    #socialIconsDiv, #legalDiv{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 2em;
+    }
+    #legalDiv{
+        margin-top: 2em;
+        font-weight: 900;
+    }
+    #copyrightDiv{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 2em;
+        padding-bottom: 4em;
+        p,svg{
+            color: grey;
+        }
+        svg{
+            font-size: 1em;
+
 #featuredMoviesDiv{
     padding:0 $padding-normal;
     #featuredMoviesHeader{
@@ -219,6 +246,7 @@ $primary-font:"";
                     }
                 }
             }
+
 
         }
     }
