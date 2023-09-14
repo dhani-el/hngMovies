@@ -28,6 +28,18 @@
 }
 #headerComponentDiv #logoAndNameDiv p {
   font-size: 1.5em;
+
+}
+#headerComponentDiv input {
+  color: white;
+  padding: 0.5em;
+}
+#headerComponentDiv input + div + fieldset {
+  border-color: white;
+}
+#headerComponentDiv input ~ div {
+  color: white;
+  border-color: white;
 }
 
 #SignInAndMenuComponentDiv {
@@ -69,6 +81,44 @@
   flex-direction: column;
   gap: 0.5em;
 }
+#adImageDiv #paginationDivComponent::-webkit-scrollbar {
+  width: 0px;
+}
+#adImageDiv #paginationDivComponent::-moz-scrollbar {
+  width: 0px;
+}
+#adImageDiv #paginationDivComponent::-ms-scrollbar {
+  width: 0px;
+}
+#adImageDiv #paginationDivComponent {
+  position: absolute;
+  right: 3vw;
+  color: white;
+  display: flex;
+  height: 5em;
+  overflow-y: scroll;
+  width: 2em;
+  justify-content: end;
+  scrollbar-width: 0px;
+}
+#adImageDiv #paginationDivComponent #singularContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 1em;
+}
+#adImageDiv #paginationDivComponent #singularContainer p {
+  display: block;
+  height: 1em;
+}
+#adImageDiv #paginationDivComponent #dash {
+  background-color: white;
+  width: 1em;
+  height: 0.4em;
+  position: sticky;
+  left: 0;
+  top: 50%;
+}
 #adImageDiv h2 {
   line-height: 1.3em;
 }
@@ -79,6 +129,9 @@
 #adImageDiv #ratingsDiv span {
   display: flex;
   gap: 0.1em;
+}
+#adImageDiv button {
+  background-color: rgb(255, 31, 68);
 }
 #adImageDiv button a {
   text-decoration: none;
