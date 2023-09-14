@@ -26,7 +26,7 @@
   width: inherit;
 }
 #headerComponentDiv #logoAndNameDiv p {
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 #headerComponentDiv #SignInAndMenuComponentDiv {
   align-items: center;
@@ -36,7 +36,6 @@
 }
 #headerComponentDiv #SignInAndMenuComponentDiv #hamburgerContainer img {
   width: inherit;
-  font-size: 1.5em;
 }
 
 #adImageDiv {
@@ -61,7 +60,7 @@
 }
 #adImageDiv #overlappingTextDiv {
   position: absolute;
-  padding-left: 2em;
+  padding-left: 4.5em;
   color: white;
   width: 20%;
   display: flex;
@@ -82,4 +81,35 @@
 #adImageDiv button a {
   text-decoration: none;
   color: white;
+}
+
+#footerDiv {
+  width: 100vw;
+  margin-top: 5em;
+  position: relative;
+  bottom: -70vh;
+}
+#footerDiv #socialIconsDiv, #footerDiv #legalDiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+#footerDiv #legalDiv {
+  margin-top: 2em;
+  font-weight: 900;
+}
+#footerDiv #copyrightDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 2em;
+  padding-bottom: 4em;
+}
+#footerDiv #copyrightDiv p, #footerDiv #copyrightDiv svg {
+  color: grey;
+}
+#footerDiv #copyrightDiv svg {
+  font-size: 1em;
 }/*# sourceMappingURL=component.css.map */

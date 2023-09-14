@@ -31,8 +31,6 @@ $overlappingTextDivWidth:20%;
             font-size: 1.5em;
         }
     }
-}
-
     #SignInAndMenuComponentDiv{
         align-items: center;
         #hamburgerContainer{
@@ -42,6 +40,7 @@ $overlappingTextDivWidth:20%;
             }
         }
     }
+}
 
 #adImageDiv{
     position: absolute;
@@ -86,6 +85,37 @@ $overlappingTextDivWidth:20%;
         a{
             text-decoration: none;
             color: white;
+        }
+    }
+}
+
+#footerDiv{
+    width: 100vw;
+    margin-top: 5em;
+    position: relative;
+    bottom: -70vh;
+    #socialIconsDiv, #legalDiv{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 2em;
+    }
+    #legalDiv{
+        margin-top: 2em;
+        font-weight: 900;
+    }
+    #copyrightDiv{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 2em;
+        padding-bottom: 4em;
+        p,svg{
+            color: grey;
+        }
+        svg{
+            font-size: 1em;
         }
     }
 }
