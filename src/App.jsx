@@ -1,6 +1,7 @@
-import { useState } from 'react';
-import Home from './Home/jsx';
+import { lazy } from 'react';
 
+const Home = lazy(()=> import("./Home/jsx"));
+const SingleMovie = lazy(()=> import("./SingleMovie"));
 
 
 function App() {

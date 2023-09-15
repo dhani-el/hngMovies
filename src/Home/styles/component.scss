@@ -7,6 +7,8 @@
 $padding-normal:4.5em;
 $padding-small:1em;
 $overlappingTextDivWidth:20%;
+$accent-color: rgb(255, 31, 68);
+$primary-font:"";
 
 #headerComponentDiv{
     display: flex;
@@ -14,10 +16,10 @@ $overlappingTextDivWidth:20%;
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    color: white;
     #logoAndNameDiv, #SignInAndMenuComponentDiv{
         display: flex;
         gap: 1em;
+        color: white;
     }
     #logoAndNameDiv{
         align-items: center;
@@ -28,7 +30,7 @@ $overlappingTextDivWidth:20%;
             }
         }
         p{
-            font-size: 1.5em;
+            font-size: 1.2em;
         }
     }
     input{
@@ -52,12 +54,12 @@ $overlappingTextDivWidth:20%;
             }
         }
     }
+
 }
 
-
 #adImageDiv{
-    position: absolute;
-    top: 0;
+    position: relative;
+    top: -10vh;
     z-index: -1;
     width: 100vw;
     height: 85vh;
@@ -82,6 +84,51 @@ $overlappingTextDivWidth:20%;
         display: flex;
         flex-direction: column;
         gap: 0.5em;
+        button{
+            a{
+                display: flex;
+                align-items: center;
+                gap: 0.5em;
+            }
+        }
+    }
+    #paginationDivComponent::-webkit-scrollbar{
+        width: 0px;
+    }
+    #paginationDivComponent::-moz-scrollbar{
+        width: 0px;
+    }
+    #paginationDivComponent::-ms-scrollbar{
+        width: 0px;
+    }
+    #paginationDivComponent{
+        position: absolute;
+        right: 3vw;
+        color: white;
+        display: flex;
+        height: 5em;
+        overflow-y: scroll;
+        width: 2em;
+        justify-content: end;
+        scrollbar-width: 0px;
+        #singularContainer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 1em;
+            p{
+                display: block;
+                height: 1em;
+            }
+        }
+        #dash{
+            background-color: white;
+            width: 1em;
+            height: 0.4em;
+            position: sticky;
+            left: 0;
+            top: 50%;
+        }
     }
     h2{
         line-height: 1.3em;
@@ -95,9 +142,116 @@ $overlappingTextDivWidth:20%;
         }
     }
     button{
+        background-color: $accent-color;
         a{
             text-decoration: none;
             color: white;
+        }
+    }
+}
+
+#footerDiv{
+    width: 100vw;
+    margin-top: 5em;
+    #socialIconsDiv, #legalDiv{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 2em;
+    }
+    #legalDiv{
+        margin-top: 2em;
+        font-weight: 900;
+    }
+    #copyrightDiv{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 2em;
+        padding-bottom: 4em;
+        p,svg{
+            color: grey;
+        }
+        svg{
+            font-size: 1em;
+        }
+    }
+}
+
+#featuredMoviesDiv{
+    padding:0 $padding-normal;
+    #featuredMoviesHeader{
+        display: flex;
+        justify-content: space-between;
+        span{
+            display: flex;
+        }
+    }
+    #moviesGrid{
+        display: grid;
+        grid-template-columns: repeat(4,25%);
+        #singleMovie{
+            width: 100%;
+            display: flex;
+            margin-bottom: 1.5em;
+            flex-direction: column;
+            #imageContainerDiv{
+                width: 90%;
+                height: auto;
+                position: relative;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+                #favouriteSpan{
+                    width: 1.2em;
+                    height: 1.2em;
+                    img{
+                        width: inherit;
+                        height: inherit;
+                        position: absolute;
+                        right: 4%;
+                        top: 4%;
+                    }
+                }
+                #tvSeriesSpan{
+                    display: flex;
+                    height: 1.5em;
+                    width: 3.2em;
+                    background-color: rgba(146, 146, 146, 0.488);
+                    border-radius: 0.5em;
+                    align-items: center;
+                    justify-content: center;
+                    position: absolute;
+                    top: 4%;
+                    left: 4%;
+                    p{
+                        font-size: 0.6em;
+    
+                    }
+                }
+            }
+            #metaDataDiv{
+                display: flex;
+                flex-direction: column;
+                width: 90%;
+                #countryAndYear,#genre{
+                    color: grey;
+                }
+                #title{
+                    font-weight: 900;
+                }
+                #ratings{
+                    display: flex;
+                    justify-content: space-between;
+                    #imdb,#rotten{
+                        display: flex;
+                    }
+                }
+            }
+
+
         }
     }
 }
