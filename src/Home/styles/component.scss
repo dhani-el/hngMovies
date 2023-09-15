@@ -58,8 +58,8 @@ $primary-font:"";
 }
 
 #adImageDiv{
-    position: absolute;
-    top: 0;
+    position: relative;
+    top: -10vh;
     z-index: -1;
     width: 100vw;
     height: 85vh;
@@ -92,6 +92,44 @@ $primary-font:"";
             }
         }
     }
+    #paginationDivComponent::-webkit-scrollbar{
+        width: 0px;
+    }
+    #paginationDivComponent::-moz-scrollbar{
+        width: 0px;
+    }
+    #paginationDivComponent::-ms-scrollbar{
+        width: 0px;
+    }
+    #paginationDivComponent{
+        position: absolute;
+        right: 3vw;
+        color: white;
+        display: flex;
+        height: 5em;
+        overflow-y: scroll;
+        width: 2em;
+        justify-content: end;
+        scrollbar-width: 0px;
+        #singularContainer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 1em;
+            p{
+                display: block;
+                height: 1em;
+            }
+        }
+        #dash{
+            background-color: white;
+            width: 1em;
+            height: 0.4em;
+            position: sticky;
+            left: 0;
+            top: 50%;
+        }
+    }
     h2{
         line-height: 1.3em;
     }
@@ -104,6 +142,7 @@ $primary-font:"";
         }
     }
     button{
+        background-color: $accent-color;
         a{
             text-decoration: none;
             color: white;
