@@ -49,7 +49,8 @@
 #headerComponentDiv input #SignInAndMenuComponentDiv #hamburgerContainer img {
   width: inherit;
 }
-#headerComponentDiv #adImageDiv {
+
+#adImageDiv {
   position: absolute;
   top: 0;
   z-index: -1;
@@ -59,17 +60,17 @@
   display: flex;
   align-items: center;
 }
-#headerComponentDiv #adImageDiv img {
+#adImageDiv img {
   width: 100%;
   height: auto;
 }
-#headerComponentDiv #adImageDiv #imageBlur {
+#adImageDiv #imageBlur {
   width: 100vw;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.612);
   position: absolute;
 }
-#headerComponentDiv #adImageDiv #overlappingTextDiv {
+#adImageDiv #overlappingTextDiv {
   position: absolute;
   padding-left: 4.5em;
   color: white;
@@ -78,23 +79,23 @@
   flex-direction: column;
   gap: 0.5em;
 }
-#headerComponentDiv #adImageDiv #overlappingTextDiv button a {
+#adImageDiv #overlappingTextDiv button a {
   display: flex;
   align-items: center;
   gap: 0.5em;
 }
-#headerComponentDiv #adImageDiv h2 {
+#adImageDiv h2 {
   line-height: 1.3em;
 }
-#headerComponentDiv #adImageDiv #ratingsDiv {
+#adImageDiv #ratingsDiv {
   display: flex;
   gap: 1em;
 }
-#headerComponentDiv #adImageDiv #ratingsDiv span {
+#adImageDiv #ratingsDiv span {
   display: flex;
   gap: 0.1em;
 }
-#headerComponentDiv #adImageDiv button a {
+#adImageDiv button a {
   text-decoration: none;
   color: white;
 }
