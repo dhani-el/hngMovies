@@ -149,6 +149,8 @@ $primary-font:"";
     }
 }
 
+}
+
 #footerDiv{
     width: 100vw;
     margin-top: 5em;
@@ -174,6 +176,9 @@ $primary-font:"";
         }
         svg{
             font-size: 1em;
+        }
+    }
+}
 
 #featuredMoviesDiv{
     padding:0 $padding-normal;

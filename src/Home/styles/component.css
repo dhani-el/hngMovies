@@ -28,32 +28,28 @@
 }
 #headerComponentDiv #logoAndNameDiv p {
   font-size: 1.5em;
-
-
 }
 #headerComponentDiv input {
   color: white;
   padding: 0.5em;
 }
-#headerComponentDiv input + div + fieldset {
+#headerComponentDiv input input + div + fieldset {
   border-color: white;
 }
-#headerComponentDiv input ~ div {
+#headerComponentDiv input input ~ div {
   color: white;
   border-color: white;
 }
-
-#SignInAndMenuComponentDiv {
+#headerComponentDiv input #SignInAndMenuComponentDiv {
   align-items: center;
 }
-#SignInAndMenuComponentDiv #hamburgerContainer {
+#headerComponentDiv input #SignInAndMenuComponentDiv #hamburgerContainer {
   width: 2.2em;
 }
-#SignInAndMenuComponentDiv #hamburgerContainer img {
+#headerComponentDiv input #SignInAndMenuComponentDiv #hamburgerContainer img {
   width: inherit;
 }
-
-#adImageDiv {
+#headerComponentDiv #adImageDiv {
   position: relative;
   top: -10vh;
   z-index: -1;
@@ -63,17 +59,17 @@
   display: flex;
   align-items: center;
 }
-#adImageDiv img {
+#headerComponentDiv #adImageDiv img {
   width: 100%;
   height: auto;
 }
-#adImageDiv #imageBlur {
+#headerComponentDiv #adImageDiv #imageBlur {
   width: 100vw;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.612);
   position: absolute;
 }
-#adImageDiv #overlappingTextDiv {
+#headerComponentDiv #adImageDiv #overlappingTextDiv {
   position: absolute;
   padding-left: 4.5em;
   color: white;
@@ -82,16 +78,16 @@
   flex-direction: column;
   gap: 0.5em;
 }
-#adImageDiv #paginationDivComponent::-webkit-scrollbar {
+#headerComponentDiv #adImageDiv #paginationDivComponent::-webkit-scrollbar {
   width: 0px;
 }
-#adImageDiv #paginationDivComponent::-moz-scrollbar {
+#headerComponentDiv #adImageDiv #paginationDivComponent::-moz-scrollbar {
   width: 0px;
 }
-#adImageDiv #paginationDivComponent::-ms-scrollbar {
+#headerComponentDiv #adImageDiv #paginationDivComponent::-ms-scrollbar {
   width: 0px;
 }
-#adImageDiv #paginationDivComponent {
+#headerComponentDiv #adImageDiv #paginationDivComponent {
   position: absolute;
   right: 3vw;
   color: white;
@@ -102,17 +98,17 @@
   justify-content: end;
   scrollbar-width: 0px;
 }
-#adImageDiv #paginationDivComponent #singularContainer {
+#headerComponentDiv #adImageDiv #paginationDivComponent #singularContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 1em;
 }
-#adImageDiv #paginationDivComponent #singularContainer p {
+#headerComponentDiv #adImageDiv #paginationDivComponent #singularContainer p {
   display: block;
   height: 1em;
 }
-#adImageDiv #paginationDivComponent #dash {
+#headerComponentDiv #adImageDiv #paginationDivComponent #dash {
   background-color: white;
   width: 1em;
   height: 0.4em;
@@ -120,21 +116,21 @@
   left: 0;
   top: 50%;
 }
-#adImageDiv h2 {
+#headerComponentDiv #adImageDiv h2 {
   line-height: 1.3em;
 }
-#adImageDiv #ratingsDiv {
+#headerComponentDiv #adImageDiv #ratingsDiv {
   display: flex;
   gap: 1em;
 }
-#adImageDiv #ratingsDiv span {
+#headerComponentDiv #adImageDiv #ratingsDiv span {
   display: flex;
   gap: 0.1em;
 }
-#adImageDiv button {
+#headerComponentDiv #adImageDiv button {
   background-color: rgb(255, 31, 68);
 }
-#adImageDiv button a {
+#headerComponentDiv #adImageDiv button a {
   text-decoration: none;
   color: white;
 }
@@ -166,6 +162,8 @@
 }
 #footerDiv #copyrightDiv svg {
   font-size: 1em;
+}
+
 #featuredMoviesDiv {
   padding: 0 4.5em;
 }

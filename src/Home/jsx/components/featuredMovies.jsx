@@ -1,5 +1,6 @@
 import {KeyboardArrowRight} from "@mui/icons-material";
 import favPng from "../../../assets/image/Favorite.png";
+import "../../styles/component.css"
 
 
 

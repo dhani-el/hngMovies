@@ -57,7 +57,7 @@ export default function Home(){
     return <div id="homeComponentDiv">
                 <HeaderComponent/>
                 <AdImage/>
-                <Footer/>
                 <FeaturedMoviesSection movieData={dummyMovieMetaData} />
+                <Footer/>
             </div>
 }

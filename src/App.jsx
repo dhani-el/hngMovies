@@ -7,7 +7,6 @@ const SingleMovie = lazy(()=> import("./SingleMovie"));
 function App() {
   return <div>
               <Home/>
-              <SingleMovie/>
           </div>
 }
 
