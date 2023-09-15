@@ -8,10 +8,8 @@
   display: flex;
   padding: 1em 4.5em;
   width: 100%;
-  max-height: 10vh;
   align-items: center;
   justify-content: space-between;
-  color: white;
 }
 #headerComponentDiv #logoAndNameDiv, #headerComponentDiv #SignInAndMenuComponentDiv {
   display: flex;
@@ -27,26 +25,15 @@
   width: inherit;
 }
 #headerComponentDiv #logoAndNameDiv p {
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
-#headerComponentDiv input {
-  color: white;
-  padding: 0.5em;
-}
-#headerComponentDiv input #SignInAndMenuComponentDiv input + div + fieldset {
-  border-color: white;
-}
-#headerComponentDiv input #SignInAndMenuComponentDiv input ~ div {
-  color: white;
-  border-color: white;
-}
-#headerComponentDiv input #SignInAndMenuComponentDiv {
+#headerComponentDiv #SignInAndMenuComponentDiv {
   align-items: center;
 }
-#headerComponentDiv input #SignInAndMenuComponentDiv #hamburgerContainer {
+#headerComponentDiv #SignInAndMenuComponentDiv #hamburgerContainer {
   width: 2.2em;
 }
-#headerComponentDiv input #SignInAndMenuComponentDiv #hamburgerContainer img {
+#headerComponentDiv #SignInAndMenuComponentDiv #hamburgerContainer img {
   width: inherit;
 }
 

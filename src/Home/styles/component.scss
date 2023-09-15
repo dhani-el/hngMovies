@@ -14,10 +14,8 @@ $primary-font:"";
     display: flex;
     padding:$padding-small $padding-normal;
     width: 100%;
-    max-height: 10vh;
     align-items: center;
     justify-content: space-between;
-    color: white;
     #logoAndNameDiv, #SignInAndMenuComponentDiv{
         display: flex;
         gap: 1em;
@@ -31,28 +29,11 @@ $primary-font:"";
             }
         }
         p{
-            font-size: 1.5em;
+            font-size: 1.2em;
         }
     }
 
-    input{
-        color: white;
-        padding: 0.5em;
-
-
-#SignInAndMenuComponentDiv{
-
- 
-    input + div + fieldset{
-        border-color: white;
-    }
-    input ~ div{
-        color: white;
-        border-color: white;
-    }
-   }
     #SignInAndMenuComponentDiv{
-
         align-items: center;
         #hamburgerContainer{
             width: 2.2em;
@@ -61,7 +42,7 @@ $primary-font:"";
             }
         }
     }
-}
+
 }
 
 #adImageDiv{
