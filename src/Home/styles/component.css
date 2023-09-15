@@ -8,13 +8,14 @@
   display: flex;
   padding: 1em 4.5em;
   width: 100%;
+  max-height: 10vh;
   align-items: center;
   justify-content: space-between;
+  color: white;
 }
 #headerComponentDiv #logoAndNameDiv, #headerComponentDiv #SignInAndMenuComponentDiv {
   display: flex;
   gap: 1em;
-  color: white;
 }
 #headerComponentDiv #logoAndNameDiv {
   align-items: center;
@@ -26,7 +27,7 @@
   width: inherit;
 }
 #headerComponentDiv #logoAndNameDiv p {
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 #headerComponentDiv input {
   color: white;
@@ -120,9 +121,6 @@
   position: sticky;
   left: 0;
   top: 50%;
-}
-#adImageDiv h2 {
-  line-height: 1.3em;
 }
 #adImageDiv #ratingsDiv {
   display: flex;
