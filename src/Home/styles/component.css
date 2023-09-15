@@ -14,6 +14,7 @@
 #headerComponentDiv #logoAndNameDiv, #headerComponentDiv #SignInAndMenuComponentDiv {
   display: flex;
   gap: 1em;
+  color: white;
 }
 #headerComponentDiv #logoAndNameDiv {
   align-items: center;
@@ -26,6 +27,17 @@
 }
 #headerComponentDiv #logoAndNameDiv p {
   font-size: 1.2em;
+}
+#headerComponentDiv input {
+  color: white;
+  padding: 0.5em;
+}
+#headerComponentDiv input + div + fieldset {
+  border-color: white;
+}
+#headerComponentDiv input ~ div {
+  color: white;
+  border-color: white;
 }
 #headerComponentDiv #SignInAndMenuComponentDiv {
   align-items: center;

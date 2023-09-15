@@ -19,6 +19,7 @@ $primary-font:"";
     #logoAndNameDiv, #SignInAndMenuComponentDiv{
         display: flex;
         gap: 1em;
+        color: white;
     }
     #logoAndNameDiv{
         align-items: center;
@@ -32,7 +33,18 @@ $primary-font:"";
             font-size: 1.2em;
         }
     }
+    input{
+        color: white;
+        padding: 0.5em;
 
+    }
+    input + div + fieldset{
+        border-color: white;
+    }
+    input ~ div{
+        color: white;
+        border-color: white;
+    }
     #SignInAndMenuComponentDiv{
         align-items: center;
         #hamburgerContainer{
