@@ -33,10 +33,10 @@
   color: white;
   padding: 0.5em;
 }
-#headerComponentDiv input input + div + fieldset {
+#headerComponentDiv input #SignInAndMenuComponentDiv input + div + fieldset {
   border-color: white;
 }
-#headerComponentDiv input input ~ div {
+#headerComponentDiv input #SignInAndMenuComponentDiv input ~ div {
   color: white;
   border-color: white;
 }
@@ -50,8 +50,8 @@
   width: inherit;
 }
 #headerComponentDiv #adImageDiv {
-  position: relative;
-  top: -10vh;
+  position: absolute;
+  top: 0;
   z-index: -1;
   width: 100vw;
   height: 85vh;
@@ -78,43 +78,10 @@
   flex-direction: column;
   gap: 0.5em;
 }
-#headerComponentDiv #adImageDiv #paginationDivComponent::-webkit-scrollbar {
-  width: 0px;
-}
-#headerComponentDiv #adImageDiv #paginationDivComponent::-moz-scrollbar {
-  width: 0px;
-}
-#headerComponentDiv #adImageDiv #paginationDivComponent::-ms-scrollbar {
-  width: 0px;
-}
-#headerComponentDiv #adImageDiv #paginationDivComponent {
-  position: absolute;
-  right: 3vw;
-  color: white;
+#headerComponentDiv #adImageDiv #overlappingTextDiv button a {
   display: flex;
-  height: 5em;
-  overflow-y: scroll;
-  width: 2em;
-  justify-content: end;
-  scrollbar-width: 0px;
-}
-#headerComponentDiv #adImageDiv #paginationDivComponent #singularContainer {
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  height: 1em;
-}
-#headerComponentDiv #adImageDiv #paginationDivComponent #singularContainer p {
-  display: block;
-  height: 1em;
-}
-#headerComponentDiv #adImageDiv #paginationDivComponent #dash {
-  background-color: white;
-  width: 1em;
-  height: 0.4em;
-  position: sticky;
-  left: 0;
-  top: 50%;
+  gap: 0.5em;
 }
 #headerComponentDiv #adImageDiv h2 {
   line-height: 1.3em;
@@ -126,9 +93,6 @@
 #headerComponentDiv #adImageDiv #ratingsDiv span {
   display: flex;
   gap: 0.1em;
-}
-#headerComponentDiv #adImageDiv button {
-  background-color: rgb(255, 31, 68);
 }
 #headerComponentDiv #adImageDiv button a {
   text-decoration: none;
