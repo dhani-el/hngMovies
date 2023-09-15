@@ -1,3 +1,4 @@
+import { LeftSection, MainSection } from "./jsx/component"
 import "./styles/index.css"
 
 
@@ -9,10 +10,5 @@ export default function SingleMovie(){
             </div>
 }
 
-function LeftSection(){
-    return <div id="leftSection"></div>
-}
 
-function MainSection(){
-    return <div id="mainSection"></div>
-}
+
