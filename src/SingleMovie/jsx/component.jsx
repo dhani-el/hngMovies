@@ -96,7 +96,7 @@ function MainSectionVideo({videoSrc}){
 }
 
 function MainSectionMetaData({someMetadata}){
-    const data  = fetch("https://api.themoviedb.org/3/trending/movie/day?api_key=61cd0c8cecd52ead927518a62ef33472")
+    const data  = fetch("https://api.themoviedb.org/3/trending/movie/day?api_key=61cd0c8cecd52ead927518a62ef33472",{method:"GET"})
     .then(function(result){
     console.log(result);
         return result});

@@ -1,7 +1,7 @@
 import { lazy } from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-const Home = lazy(()=> import("./Home/jsx"));
-const SingleMovie = lazy(()=> import("./SingleMovie"));
+import Home from "./Home/jsx"
+import SingleMovie from "./SingleMovie";
 
 
 const routes = createBrowserRouter([
