@@ -1,5 +1,7 @@
 import { Button } from "@mui/material";
+import PaginationComponent from "./pagination";
 import TestImage from "../../../assets/image/testimage.jpg";
+import {PlayCircle} from "@mui/icons-material"
 
 
 export default function AdImage(){
@@ -13,9 +15,10 @@ export default function AdImage(){
         trailerLink:"https://www.google.com",
     }
     return <div id="adImageDiv" >
-                <OverlappingTextComponent details={dummyData} />
-                <div id="imageBlur"></div>
                 <img src={TestImage} />
+                <div id="imageBlur"></div>
+                <PaginationComponent/>
+                <OverlappingTextComponent details={dummyData} />
             </div>
 }
 
@@ -32,6 +35,6 @@ function OverlappingTextComponent({details}){
             <p>{details.description}</p>
         </div>
 
-        <Button variant="contained" ><a href={details.trailerLink} > WATCH TRAILER</a></Button>
+        <Button variant="contained" ><a href={details.trailerLink} > <PlayCircle/> WATCH TRAILER</a></Button>
     </div>
 }

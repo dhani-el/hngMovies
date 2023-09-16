@@ -7,16 +7,4 @@
     height: 100vh;
     display: flex;
     gap: 5%;
-    #leftSection{
-        width: 20%;
-        height: 100%;
-        border: 0.1em grey solid;
-        border-top-right-radius: 2em;
-        border-bottom-right-radius: 2em;
-    }
-    #mainSection{
-        width: 70%;
-        height: 100%;
-        border: 0.1em grey solid;
-    }
 }

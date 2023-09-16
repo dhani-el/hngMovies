@@ -8,6 +8,7 @@
   display: flex;
   padding: 1em 4.5em;
   width: 100%;
+  max-height: 10vh;
   align-items: center;
   justify-content: space-between;
   color: white;
@@ -26,7 +27,18 @@
   width: inherit;
 }
 #headerComponentDiv #logoAndNameDiv p {
-  font-size: 1.2em;
+  font-size: 1.5em;
+}
+#headerComponentDiv input {
+  color: white;
+  padding: 0.5em;
+}
+#headerComponentDiv input + div + fieldset {
+  border-color: white;
+}
+#headerComponentDiv input ~ div {
+  color: white;
+  border-color: white;
 }
 #headerComponentDiv #SignInAndMenuComponentDiv {
   align-items: center;
@@ -36,12 +48,11 @@
 }
 #headerComponentDiv #SignInAndMenuComponentDiv #hamburgerContainer img {
   width: inherit;
-  font-size: 1.5em;
 }
 
 #adImageDiv {
-  position: absolute;
-  top: 0;
+  position: relative;
+  top: -10vh;
   z-index: -1;
   width: 100vw;
   height: 85vh;
@@ -61,15 +72,55 @@
 }
 #adImageDiv #overlappingTextDiv {
   position: absolute;
-  padding-left: 2em;
+  padding-left: 4.5em;
   color: white;
   width: 20%;
   display: flex;
   flex-direction: column;
   gap: 0.5em;
 }
-#adImageDiv h2 {
-  line-height: 1.3em;
+#adImageDiv #overlappingTextDiv button a {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+#adImageDiv #paginationDivComponent::-webkit-scrollbar {
+  width: 0px;
+}
+#adImageDiv #paginationDivComponent::-moz-scrollbar {
+  width: 0px;
+}
+#adImageDiv #paginationDivComponent::-ms-scrollbar {
+  width: 0px;
+}
+#adImageDiv #paginationDivComponent {
+  position: absolute;
+  right: 3vw;
+  color: white;
+  display: flex;
+  height: 5em;
+  overflow-y: scroll;
+  width: 2em;
+  justify-content: end;
+  scrollbar-width: 0px;
+}
+#adImageDiv #paginationDivComponent #singularContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 1em;
+}
+#adImageDiv #paginationDivComponent #singularContainer p {
+  display: block;
+  height: 1em;
+}
+#adImageDiv #paginationDivComponent #dash {
+  background-color: white;
+  width: 1em;
+  height: 0.4em;
+  position: sticky;
+  left: 0;
+  top: 50%;
 }
 #adImageDiv #ratingsDiv {
   display: flex;
@@ -79,7 +130,113 @@
   display: flex;
   gap: 0.1em;
 }
+#adImageDiv button {
+  background-color: rgb(255, 31, 68);
+}
 #adImageDiv button a {
   text-decoration: none;
   color: white;
+}
+
+#footerDiv {
+  width: 100vw;
+  margin-top: 5em;
+}
+#footerDiv #socialIconsDiv, #footerDiv #legalDiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+#footerDiv #legalDiv {
+  margin-top: 2em;
+  font-weight: 900;
+}
+#footerDiv #copyrightDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 2em;
+  padding-bottom: 4em;
+}
+#footerDiv #copyrightDiv p, #footerDiv #copyrightDiv svg {
+  color: grey;
+}
+#footerDiv #copyrightDiv svg {
+  font-size: 1em;
+}
+
+#featuredMoviesDiv {
+  padding: 0 4.5em;
+}
+#featuredMoviesDiv #featuredMoviesHeader {
+  display: flex;
+  justify-content: space-between;
+}
+#featuredMoviesDiv #featuredMoviesHeader span {
+  display: flex;
+}
+#featuredMoviesDiv #moviesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+}
+#featuredMoviesDiv #moviesGrid #singleMovie {
+  width: 100%;
+  display: flex;
+  margin-bottom: 1.5em;
+  flex-direction: column;
+}
+#featuredMoviesDiv #moviesGrid #singleMovie #imageContainerDiv {
+  width: 90%;
+  height: auto;
+  position: relative;
+}
+#featuredMoviesDiv #moviesGrid #singleMovie #imageContainerDiv img {
+  width: 100%;
+  height: 100%;
+}
+#featuredMoviesDiv #moviesGrid #singleMovie #imageContainerDiv #favouriteSpan {
+  width: 1.2em;
+  height: 1.2em;
+}
+#featuredMoviesDiv #moviesGrid #singleMovie #imageContainerDiv #favouriteSpan img {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  right: 4%;
+  top: 4%;
+}
+#featuredMoviesDiv #moviesGrid #singleMovie #imageContainerDiv #tvSeriesSpan {
+  display: flex;
+  height: 1.5em;
+  width: 3.2em;
+  background-color: rgba(146, 146, 146, 0.488);
+  border-radius: 0.5em;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 4%;
+  left: 4%;
+}
+#featuredMoviesDiv #moviesGrid #singleMovie #imageContainerDiv #tvSeriesSpan p {
+  font-size: 0.6em;
+}
+#featuredMoviesDiv #moviesGrid #singleMovie #metaDataDiv {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+#featuredMoviesDiv #moviesGrid #singleMovie #metaDataDiv #countryAndYear, #featuredMoviesDiv #moviesGrid #singleMovie #metaDataDiv #genre {
+  color: grey;
+}
+#featuredMoviesDiv #moviesGrid #singleMovie #metaDataDiv #title {
+  font-weight: 900;
+}
+#featuredMoviesDiv #moviesGrid #singleMovie #metaDataDiv #ratings {
+  display: flex;
+  justify-content: space-between;
+}
+#featuredMoviesDiv #moviesGrid #singleMovie #metaDataDiv #ratings #imdb, #featuredMoviesDiv #moviesGrid #singleMovie #metaDataDiv #ratings #rotten {
+  display: flex;
 }/*# sourceMappingURL=component.css.map */
