@@ -6,7 +6,7 @@
 
 $padding-normal:4.5em;
 $padding-small:1em;
-$overlappingTextDivWidth:20%;
+$overlappingTextDivWidth:25%;
 $accent-color: rgb(255, 31, 68);
 $primary-font:"";
 
@@ -133,10 +133,15 @@ $primary-font:"";
     }
     #ratingsDiv{
         display: flex;
+        width: 100%;
         gap: 1em;
         span{
             display: flex;
-            gap:0.1em;
+            gap:0.2em;
+            align-items: center;
+            img{
+                height: 2em;
+            }
         }
     }
     button{

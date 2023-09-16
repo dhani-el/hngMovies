@@ -1,7 +1,9 @@
 import { Button } from "@mui/material";
 import PaginationComponent from "./pagination";
 import TestImage from "../../../assets/image/testimage.jpg";
-import {PlayCircle} from "@mui/icons-material"
+import {PlayCircle} from "@mui/icons-material";
+import imdb from "../../../assets/image/imdb.png"
+import rotten from "../../../assets/image/rotten.png"
 
 
 export default function AdImage(){
@@ -27,8 +29,8 @@ function OverlappingTextComponent({details}){
         <h2>{details.movieTitle}</h2>
 
         <div id="ratingsDiv">
-            <span><img src={details.imdbLogo} alt="imdb logo" /><p>{details.imdbRating}</p></span>
-            <span><img src={details.rottenTomato} alt="imdb logo" /><p>{details.rottenRating}</p></span>
+            <span><img src={imdb} alt="imdb logo" /><p>{details.imdbRating}</p></span>
+            <span><img src={rotten} alt="rotten tomato logo" /><p>{details.rottenRating}</p></span>
         </div>
 
         <div>
