@@ -188,6 +188,10 @@
   display: grid;
   grid-template-columns: repeat(4, 25%);
 }
+#featuredMoviesDiv #moviesGrid a {
+  text-decoration: none;
+  color: black;
+}
 #featuredMoviesDiv #moviesGrid #singleMovie {
   width: 100%;
   display: flex;
