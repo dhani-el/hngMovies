@@ -92,7 +92,7 @@ export function MainSection(){
 }
 
 function MainSectionVideo({videoSrc}){
-    return <div id="MainSectionVideo"><video controls  poster={poster}> <source src={video}  type="video/mp4"/> </video></div>
+    return <div id="MainSectionVideo"><video controls  poster={poster}> <source src=""  type="video/mp4"/> </video></div>
 }
 
 function MainSectionMetaData({someMetadata}){
