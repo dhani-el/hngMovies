@@ -14,12 +14,13 @@ $primary-font:"";
     display: flex;
     padding:$padding-small $padding-normal;
     width: 100%;
+    max-height: 10vh;
     align-items: center;
     justify-content: space-between;
+    color: white;
     #logoAndNameDiv, #SignInAndMenuComponentDiv{
         display: flex;
         gap: 1em;
-        color: white;
     }
     #logoAndNameDiv{
         align-items: center;
@@ -30,7 +31,7 @@ $primary-font:"";
             }
         }
         p{
-            font-size: 1.2em;
+            font-size: 1.5em;
         }
     }
     input{
@@ -54,8 +55,8 @@ $primary-font:"";
             }
         }
     }
-
 }
+
 
 #adImageDiv{
     position: relative;
@@ -129,9 +130,6 @@ $primary-font:"";
             left: 0;
             top: 50%;
         }
-    }
-    h2{
-        line-height: 1.3em;
     }
     #ratingsDiv{
         display: flex;
@@ -250,7 +248,6 @@ $primary-font:"";
                     }
                 }
             }
-
 
         }
     }
