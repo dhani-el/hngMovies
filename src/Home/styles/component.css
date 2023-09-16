@@ -178,9 +178,11 @@
 #featuredMoviesDiv #featuredMoviesHeader {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 1.5em;
 }
 #featuredMoviesDiv #featuredMoviesHeader span {
   display: flex;
+  color: rgb(226, 13, 49);
 }
 #featuredMoviesDiv #moviesGrid {
   display: grid;
@@ -231,9 +233,12 @@
   display: flex;
   flex-direction: column;
   width: 90%;
+  gap: 0.4em;
 }
 #featuredMoviesDiv #moviesGrid #singleMovie #metaDataDiv #countryAndYear, #featuredMoviesDiv #moviesGrid #singleMovie #metaDataDiv #genre {
   color: grey;
+  display: flex;
+  gap: 0.2em;
 }
 #featuredMoviesDiv #moviesGrid #singleMovie #metaDataDiv #title {
   font-weight: 900;
@@ -244,4 +249,9 @@
 }
 #featuredMoviesDiv #moviesGrid #singleMovie #metaDataDiv #ratings #imdb, #featuredMoviesDiv #moviesGrid #singleMovie #metaDataDiv #ratings #rotten {
   display: flex;
+  gap: 0.4em;
+  align-items: center;
+}
+#featuredMoviesDiv #moviesGrid #singleMovie #metaDataDiv #ratings #imdb img, #featuredMoviesDiv #moviesGrid #singleMovie #metaDataDiv #ratings #rotten img {
+  height: 2em;
 }/*# sourceMappingURL=component.css.map */

@@ -96,17 +96,21 @@ function MainSectionVideo({videoSrc}){
 }
 
 function MainSectionMetaData({someMetadata}){
+    const data  = fetch("https://api.themoviedb.org/3/trending/movie/day?api_key=61cd0c8cecd52ead927518a62ef33472")
+    .then(function(result){
+    console.log(result);
+        return result});
     return <div id="MainSectionMetaData">
                 <div id="basicData">
-                    <p id="title">{someMetadata.title}</p>
-                    <p id="year" className="dot">{someMetadata.year}</p>
+                    <p id="title" data-testid = "movie-title">{someMetadata.title}</p>
+                    <p id="year" className="dot" data-testid = "movie-release-date">{new Date(someMetadata.year).toUTCString()}</p>
                     <p id="rating" className="dot">{someMetadata.rating}</p>
-                    <p id="duration" className="dot">{someMetadata.duration}</p>
+                    <p id="duration" className="dot" data-testid = "movie-runtime" >{someMetadata.duration}</p>
                     <div id="listOfGenre">{someMetadata.genre.map(function(aGenre){
                            return <span key={aGenre} id="Agenre">{`${aGenre} `}</span>
                     })}</div>
                 </div>
-                <p id="synopsis">{someMetadata.synopsis}</p>
+                <p id="synopsis" data-testid = "movie-overview">{someMetadata.synopsis}</p>
                 <div id="cast" >
                     <div>
                         <p id="directors">Director : </p><p className="value"> {someMetadata.director}</p>

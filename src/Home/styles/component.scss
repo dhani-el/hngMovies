@@ -187,8 +187,10 @@ $primary-font:"";
     #featuredMoviesHeader{
         display: flex;
         justify-content: space-between;
+        padding-bottom: 1.5em;
         span{
             display: flex;
+            color: rgb(226, 13, 49);
         }
     }
     #moviesGrid{
@@ -239,8 +241,11 @@ $primary-font:"";
                 display: flex;
                 flex-direction: column;
                 width: 90%;
+                gap: 0.4em;
                 #countryAndYear,#genre{
                     color: grey;
+                    display: flex;
+                    gap: 0.2em;
                 }
                 #title{
                     font-weight: 900;
@@ -250,6 +255,11 @@ $primary-font:"";
                     justify-content: space-between;
                     #imdb,#rotten{
                         display: flex;
+                        gap: 0.4em;
+                        align-items: center;
+                        img{
+                            height: 2em;
+                        }
                     }
                 }
             }

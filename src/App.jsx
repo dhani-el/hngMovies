@@ -10,7 +10,7 @@ const routes = createBrowserRouter([
     element:<Home/>
   },
   {
-    path:"/movies",
+    path:"/movies/:id",
     element:<SingleMovie/>
   }
 ])
