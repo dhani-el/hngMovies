@@ -1,0 +1,272 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#leftSection {
+  width: 15%;
+  height: 100%;
+  border: 0.08em rgb(210, 210, 210) solid;
+  border-top-right-radius: 2em;
+  border-bottom-right-radius: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#leftSection #leftSectionHeader {
+  display: flex;
+  width: 100%;
+  padding-top: 2em;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+}
+#leftSection #leftSectionHeaderImageSpan {
+  width: 2.7em;
+  height: 2.7em;
+}
+#leftSection #leftSectionHeaderImageSpan img {
+  width: 100%;
+  height: 100%;
+}
+#leftSection #leftSectionHeaderP {
+  font-weight: 900;
+  font-size: 1.5em;
+}
+#leftSection #LeftSectionMenuList {
+  width: 100%;
+  padding-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+#leftSection #LeftSectionMenuList #singleMenuItem {
+  width: calc(100% + 0.3em);
+  display: flex;
+  justify-content: start;
+  gap: 2em;
+  padding: 1em;
+}
+#leftSection #LeftSectionMenuList #singleMenuItem p {
+  font-weight: 900;
+  font-size: 1em;
+}
+#leftSection #LeftSectionMenuList #singleMenuItem.clicked {
+  background-color: rgba(236, 170, 181, 0.753);
+  border-right: 0.3em rgb(200, 60, 83) solid;
+}
+#leftSection #LeftSectionMenuList #singleMenuItem.clicked p {
+  color: rgb(211, 65, 89);
+}
+#leftSection #LeftSectionModal {
+  width: 80%;
+  margin: 10%;
+  padding: 0 0.5em;
+  padding-top: 1em;
+  border: 0.2em rgb(200, 60, 83) solid;
+  border-radius: 1em;
+  background-color: rgb(255, 234, 234);
+  color: rgb(54, 54, 54);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2em;
+  padding-bottom: 1em;
+}
+#leftSection #LeftSectionModalMainP {
+  font-weight: 900;
+  font-size: 1.1em;
+}
+#leftSection #LeftSectionModalMinorP {
+  font-size: 0.8em;
+}
+#leftSection #LeftSectionModal button {
+  background-color: rgba(236, 170, 181, 0.753);
+  color: rgb(200, 60, 83);
+  font-size: 0.5em;
+  font-weight: 900;
+}
+#leftSection #LeftSectionLogOut {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+#leftSection #LeftSectionLogOut p {
+  font-weight: 900;
+}
+
+#mainSection {
+  width: 75%;
+  height: 92%;
+}
+#mainSection #MainSectionVideo {
+  width: 100%;
+  height: 50%;
+}
+#mainSection #MainSectionVideo video {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5em;
+}
+#mainSection #metaDataContainer {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+#mainSection #metaDataContainer #MainSectionMetaData {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#mainSection #metaDataContainer #MainSectionMetaData #basicData {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 900;
+}
+#mainSection #metaDataContainer #MainSectionMetaData #basicData .dot {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+#mainSection #metaDataContainer #MainSectionMetaData #basicData .dot::before {
+  content: ".";
+  display: block;
+  color: black;
+  font-size: 2.5em;
+  line-height: 0;
+}
+#mainSection #metaDataContainer #MainSectionMetaData #basicData #listOfGenre {
+  display: flex;
+  gap: 0.2em;
+}
+#mainSection #metaDataContainer #MainSectionMetaData #basicData #listOfGenre #Agenre {
+  border: 0.06em rgba(255, 210, 219, 0.8) solid;
+  color: rgb(200, 60, 83);
+  padding: 0.2em;
+  border-radius: 0.6em;
+}
+#mainSection #metaDataContainer #MainSectionMetaData #synopsis {
+  display: block;
+  width: 100%;
+  text-align: justify;
+}
+#mainSection #metaDataContainer #MainSectionMetaData #cast {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+#mainSection #metaDataContainer #MainSectionMetaData #cast div {
+  display: flex;
+  gap: 0.5em;
+  font-weight: 900;
+}
+#mainSection #metaDataContainer #MainSectionMetaData #cast div .value {
+  color: rgb(200, 60, 83);
+}
+#mainSection #metaDataContainer #MainSectionMetaData #acheivement {
+  display: flex;
+  padding: 0 0.5;
+}
+#mainSection #metaDataContainer #MainSectionMetaData #acheivement span {
+  display: block;
+  background-color: rgb(200, 60, 83);
+  padding: 0.7em;
+  border-radius: 0.5em;
+  color: white;
+  z-index: 1;
+  width: 35%;
+}
+#mainSection #metaDataContainer #MainSectionMetaData #acheivement select {
+  display: block;
+  padding: 0.5em;
+  position: relative;
+  left: -1%;
+  z-index: 0;
+  width: 65%;
+}
+#mainSection #metaDataContainer #MainSectionExtraData {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#mainSection #metaDataContainer #MainSectionExtraData #extraRating {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+#mainSection #metaDataContainer #MainSectionExtraData #extraRating svg {
+  color: gold;
+}
+#mainSection #metaDataContainer #MainSectionExtraData #extraRating #ratingSpan {
+  display: flex;
+  gap: 0.2em;
+}
+#mainSection #metaDataContainer #MainSectionExtraData #extraRating #ratingSpan #greyText {
+  color: grey;
+}
+#mainSection #metaDataContainer #MainSectionExtraData #callToActions {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.5em;
+}
+#mainSection #metaDataContainer #MainSectionExtraData #callToActions button {
+  display: flex;
+  width: 100%;
+  padding: 1em;
+  gap: 0.5em;
+}
+#mainSection #metaDataContainer #MainSectionExtraData #callToActions #showtimeButton {
+  background-color: rgb(200, 60, 83);
+}
+#mainSection #metaDataContainer #MainSectionExtraData #callToActions #watchOptions {
+  background-color: rgb(255, 197, 207);
+  border: 0.1em rgb(200, 60, 83) solid;
+  color: black;
+  font-weight: 700;
+}
+#mainSection #metaDataContainer #MainSectionExtraData #suggestedShows {
+  width: 100%;
+  height: 45%;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.1em;
+}
+#mainSection #metaDataContainer #MainSectionExtraData #suggestedShows .imageDivs {
+  width: 100%;
+  height: 100%;
+}
+#mainSection #metaDataContainer #MainSectionExtraData #suggestedShows .imageDivs img {
+  width: 100%;
+  height: 100%;
+}
+#mainSection #metaDataContainer #MainSectionExtraData #suggestedShows #explanation {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  gap: 0.5em;
+  background-color: rgba(0, 0, 0, 0.262);
+  color: white;
+  bottom: 0;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+#mainSection #metaDataContainer #MainSectionExtraData .imageDivs:first-child img {
+  border-top-left-radius: 0.5em;
+  border-bottom-left-radius: 0.5em;
+}
+#mainSection #metaDataContainer #MainSectionExtraData .imageDivs:nth-child(3) img {
+  border-top-right-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}/*# sourceMappingURL=components.css.map */
