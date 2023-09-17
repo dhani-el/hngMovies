@@ -3,6 +3,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from "./Home/jsx"
 import SingleMovie from "./SingleMovie";
 
+import "./mainStyles/index.css"
+
 
 const routes = createBrowserRouter([
   {

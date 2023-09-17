@@ -84,8 +84,8 @@ export function MainSection({data}){
     return <div id="mainSection">
                 <MainSectionVideo videoSrc={data.video} poster={`http://image.tmdb.org/t/p/original/${data.backdrop_path}`}/>
                 <div id="metaDataContainer">
-                    <MainSectionMetaData someMetadata={data}/>
-                    <MainSectionExtraData extraData={{vote_average:data.vote_average,vote_count:data.vote_count,recomendedImage:dummyData.recomendedImage}}/>
+                    <MainSectionMetaData someMetadata={data} dummyData={dummyData}/>
+                    <MainSectionExtraData extraData={{vote_average:data.vote_average,vote_count:data.vote_count,recommendations:data.recommendations}}/>
                 </div>
             </div>
 }
@@ -94,12 +94,12 @@ function MainSectionVideo({videoSrc,poster}){
     return <div id="MainSectionVideo"><video controls  poster={poster}> <source src={videoSrc == false ? false:videoSrc}  type="video/mp4"/> </video></div>
 }
 
-function MainSectionMetaData({someMetadata}){
+function MainSectionMetaData({someMetadata,dummyData}){
     console.log(someMetadata);
     return <div id="MainSectionMetaData">
                 <div id="basicData">
                     <p id="title" data-testid = "movie-title">{someMetadata.title}</p>
-                    <p id="year" className="dot" data-testid = "movie-release-date">{someMetadata.release_date}</p>
+                    <p id="year" className="dot" data-testid = "movie-release-date">{new Date(someMetadata.release_date).getUTCFullYear()}</p>
                     <p id="rating" className="dot">PG-13</p>
                     <p id="duration" className="dot" data-testid = "movie-runtime" >{someMetadata.runtime} mins</p>
                     <div id="listOfGenre">{someMetadata.genres.map(function(aGenre){
@@ -109,13 +109,13 @@ function MainSectionMetaData({someMetadata}){
                 <p id="synopsis" data-testid = "movie-overview">{someMetadata.overview}</p>
                 <div id="cast" >
                     <div>
-                        <p id="directors">Director : </p><p className="value"> {someMetadata.director?someMetadata.director:"N/A"}</p>
+                        <p id="directors">Director : </p><p className="value"> {someMetadata.director?someMetadata.director:dummyData.director}</p>
                     </div>
                     <div>
-                        <p id="writers">Writers : </p><p className="value"> {someMetadata.writers ? Array.from(someMetadata.writers).join(", "):"N/A"}</p>
+                        <p id="writers">Writers : </p><p className="value"> {someMetadata.writers ? Array.from(someMetadata.writers).join(", "):Array.from(dummyData.writers).join(", ")}</p>
                     </div>
                     <div>
-                        <p id="stars">Stars : </p><p className="value"> {someMetadata.stars ? Array.from(someMetadata.stars).join(", "):"N/A"}</p>
+                        <p id="stars">Stars : </p><p className="value"> {someMetadata.stars ? Array.from(someMetadata.stars).join(", "):Array.from(dummyData.stars).join(", ")}</p>
                     </div>
                 </div>
                 <div id="acheivement">
@@ -129,6 +129,7 @@ function MainSectionMetaData({someMetadata}){
 }
 
 export function MainSectionExtraData({extraData}){
+    console.log("this is recomended data",extraData);
     return <div id="MainSectionExtraData">
                 <div id="extraRating">
                     <Star/>
@@ -142,9 +143,9 @@ export function MainSectionExtraData({extraData}){
                     <Button variant="contained" id="watchOptions" ><List/> More Watch Options</Button>
                 </div>
                 <div id="suggestedShows">
-                    {extraData.recomendedImage.map(function(oneImage){
+                    {extraData.recommendations.results.slice(0,3).map(function(oneImage){
                         return <div className="imageDivs">
-                                    <img src={oneImage}/>
+                                    <img src={`http://image.tmdb.org/t/p/w300/${oneImage.poster_path}`}/>
                                 </div>
                     })}
                     <div id="explanation"><List/><p>The Best Movies and Shows in September</p></div>

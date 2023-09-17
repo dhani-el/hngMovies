@@ -14,7 +14,7 @@ export default function Home(){
     const [movieData, setMovieData] = useState([])
 
    useEffect(function(){
-        const data = axios.get("https://api.themoviedb.org/3/trending/movie/day?api_key=61cd0c8cecd52ead927518a62ef33472")
+        const data = axios.get("https://api.themoviedb.org/3/movie/top_rated?api_key=61cd0c8cecd52ead927518a62ef33472")
         .then(info=>{console.log(info.data.results); setMovieData(info.data.results.slice(0,10))});
     },[]);
 
